@@ -1,0 +1,291 @@
+:root {
+    font-size: 62.5%;
+}
+
+.form-product{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    margin-top: 30px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+form {
+    background-color: #fff;
+    width: 80vw;
+    height: min(90vh, calc(80% + 100px));
+    margin: auto auto;
+    padding-bottom: 8rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+} 
+
+form .header p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+
+form fieldset {
+    width: 80%;
+    max-width: 900px;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.8rem;
+    margin-bottom: 5rem;
+}
+.form-product h2 {
+    font-size:36px; 
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    line-height:1em;
+    color: black;
+  }
+
+
+.input-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-block label,
+.input-block span {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.input-block input,
+.input-block textarea,
+.input-block select {
+    padding: 16px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
+
+
+.input-block input:focus,
+.input-block textarea:focus,
+.input-block select:focus {
+        border-color: #195F93;
+}
+
+.input-block input.filled,
+.input-block textarea.filled,
+.input-block select.filled {
+    border: 1px solid #195F93;
+}
+
+.input-block select:focus{
+    z-index: 1;
+}
+
+
+.input-block input::placeholder,
+.input-block textarea::placeholder,
+.input-block select::placeholder {
+    font-weight: 400;
+    color: #6A7090;
+    letter-spacing: normal;
+}
+
+.input-block textarea {
+    resize: none;
+    max-height: 160px;
+
+    width: 100%;
+}
+
+.input-block.upload {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.input-block.upload input[type="file"] {
+    display: none;
+}
+
+.input-block.upload .upload-btn {
+    display: block;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6A7090;
+    padding: 4px 8px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.input-block.upload .upload-btn.active {
+    border: 1px solid #195F93;
+}
+
+.input-block.upload .upload-btn:hover {
+    border-color: #195F93;
+}
+
+button {
+    border: none;
+    width: 360px;
+    font-weight: 400;
+    padding: 16px 0;
+    background-color:  #195F93;
+    color: white;
+    border-radius: 6px !important;
+   cursor: pointer;
+}
+
+button:hover {
+    background-color:  #0E3A5A;
+}
+button .submit{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+@media(max-width: 860px) {
+    :root {
+        font-size: 60%;
+    }
+
+    form .header p {
+        margin-bottom: 2rem;
+    }
+
+   .input-block.upload .upload-btn {
+        width: 12rem;
+    }
+}
+
+@media(max-width: 700px) {
+    :root {
+        font-size: 56%;
+    }
+
+   .input-block.upload .upload-btn {
+        width: 10rem;
+    }
+}
+
+@media(max-width: 620px) {
+    :root {
+        font-size: 48%;
+    }
+
+    form {
+        height: auto;
+    }
+
+    form .header {
+        margin-bottom: 1rem;
+    }
+
+    form .header p {
+        margin-top: 2rem;
+    }
+
+   .input-block input, 
+   .input-block textarea, 
+   .input-block select {
+        padding: 1.2rem 1rem;
+    }
+
+   .input-block select {
+        font-size: 1.4rem;
+    }
+
+   .input-block textarea {
+        max-height: 12rem;
+    }
+
+   .input-block input::placeholder,
+   .input-block textarea::placeholder,
+   .input-block select::placeholder {
+        font-size: 1.4rem;
+    }
+
+   .input-block i {
+        top: 3.3rem;
+    }
+
+    form fieldset {
+        display: unset;
+    }
+
+   .input-block.upload .upload-btn {
+        width: 16rem;
+    }
+
+    button {
+        width: 34rem;
+    }
+}
+
+@media(max-width: 350px) {
+    form .header p {
+        font-size: 1.5rem;
+    }
+
+    form .header h3 {
+        font-size: 2.5rem;
+    }
+
+   .input-block.upload .upload-btn {
+        width: 14rem;
+    }
+
+    button {
+        width: 30rem;
+    }
+}
+.panel .btn-back{
+    font-weight: 400;
+    font-size: 18px;
+    color: #195F93;
+}
+.panel .btn-back p {
+    font-size: 16px;
+    text-decoration: none !important;
+}
+.panel .btn-back :hover{
+   color:  #2C3A4A
+}
+.user_content{
+    color: white;
+}
+.user_content a, .user_content {
+    color: white;
+    font-size: 16px !important;
+    
+}
+.user_content a:hover{
+    color: white;
+}

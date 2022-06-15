@@ -1,0 +1,65 @@
+.page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.bg {
+    height: 300px;
+    width: 100%;
+    background-color: #CBDBFE;
+    clip-path: polygon(0 85%, 100% 5%, 100% 100%, 0 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    z-index: 10;
+}
+
+.leftscr {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    z-index: 15;
+}
+
+.leftscr h1 {
+    font-size: 72px;
+    color: #1B325F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.leftscr h6 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #8592AA;
+    font-weight: normal;
+    line-height: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.leftscr .btn {
+    background-color: #195F93;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+    font-weight: 400;
+}
+.leftscr .btn a{
+	color: #fff;
+	text-decoration: none;
+}
+.leftscr .btn:hover {
+    background-color:  #0E3A5A;
+}

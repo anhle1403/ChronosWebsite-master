@@ -1,0 +1,242 @@
+
+
+   
+html, body {
+	background: #f2f2f2;
+  }
+
+a:hover{
+    text-decoration: none !important;
+}
+
+.filter-group{
+	border: 1px solid #707070;
+}
+#showProduct{
+	color: white;
+	background-color: #195F93;
+	font-size: 18px;
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+ul > li > label{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.banner {
+	color: white;
+	background: url('http://125.234.104.133/web_php/gr09/Assets/logo/Rec16.jpg') top left/cover no-repeat;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.banner-text > h2 { 
+	padding-bottom: 30px;
+}
+.text_p {
+   font-size: 30px;
+   line-height: 55px;
+}
+.banner h2, .banner p {
+   margin: 0 30px;
+}
+
+.head_content {
+	background-color: #2C3A4A;
+	height: 66px;
+}
+.text_title{
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+    padding-top: 4%;
+}
+.title{
+	color: #3C3A3A;
+	font-size: 16px;
+	font-weight: 500;
+}
+.card-header{
+	height: 43px;
+	background-color: rgba(14, 58, 90, 0.79) !important;
+}
+.card-body > nav > ul > li{
+	margin: 10px 0;
+}
+
+.card{
+	border: 0px !important;
+  }
+.item-zoom {
+	position: relative;
+	overflow: hidden;
+}
+.item-zoom img {
+	vertical-align: top;	
+	width: 95%;
+	max-width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.titleProduct{
+	color: #195F93;
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 500;
+	min-height: 90px;
+}
+
+.titleProduct:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.btnProduct.btn{
+	background: #195F93;
+	color: #fff;
+	margin-top: 40px;
+}
+.page-item .page-link {
+	color: #195F93;
+}
+.page-item .page-link:hover{
+	color:  #0E3A5A;
+}
+.page-item .page-link:focus{
+	box-shadow: none !important;
+}
+.page-item.active .page-link {
+	color:  #0E3A5A !important;
+	border: 1px solid #dee2e6 !important;
+	background-color: #e9ecef !important;
+}
+.btnProduct > a {
+    color: #fff;
+  }
+  .btnProduct > a:hover{
+    color: #fff;
+  }
+.button, #showProduct{
+    transition: 0.3s;
+}
+
+.button:hover, #showProduct:hover {
+    background-color: #0E3A5A;
+	color: white;
+}
+/* Check box */
+.fiter-item{
+	display: flex;
+	align-items: center;
+}
+.fiter-item label{
+	margin: 0;
+	margin-left:20px ;
+	cursor: pointer;
+}
+.fiter-item input{
+    width: 15px !important;
+    height: 15px !important;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #0E3A5A;
+    background-size: contain;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    position: relative;
+    cursor: pointer;
+}
+.fiter-item input::before {
+    content: "";
+    width: 9px;
+    height: 5px;
+    border-left: 2px solid #0E3A5A;
+    border-bottom: 2px solid #0E3A5A;
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    transform: translate(-50%, -50%) rotate( -45deg );
+    display: none;
+}
+.fiter-item input:checked::before{
+    display: block;
+}
+/*end Checkbox */
+/* Page */
+
+/*EndPage */
+
+  @media (min-width:768px) and (max-width: 992px)
+  {
+	  .text_title{
+		  font-size: 18px;
+	  }
+	  .title{
+		margin-bottom: 0;
+		font-size: 12px;
+	  }
+	  .card-body > nav > ul > li {
+		  display: flex;
+	  }
+	  input[type=checkbox]{
+		  margin-top: 5px;
+	  }
+  }
+  @media (min-width: 993px) and (max-width: 1200px)
+  {
+	.card-body > nav > ul > li {
+		display: flex;
+	}
+	input[type=checkbox]{
+		margin-top: 5px;
+	}
+  }
+  @media (min-width: 450px) and (max-width: 767px){
+	.item-zoom img{
+		width: unset;
+	}
+  }
+  @media (max-width: 767px){
+	.banner-text > h2 { 
+		padding-bottom: 20px;
+		font-size: 20px;
+	}
+	.text_p {
+		font-size: 16px;
+		line-height: 32px;
+	 }
+	 .titleProduct{
+		 min-height: 50px;
+	 }
+  }
+
+
+  @media screen and (min-width: 1400px){
+
+	.footer-bottom .container {
+	  min-width: 1320px;
+	}
+  }
